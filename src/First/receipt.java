@@ -9,5 +9,6 @@ public class receipt {
         System.out.format ("\t\t  ----------------- \n");
         System.out.format ("\t\t Item1 \t:\t $%.2f \n",item1);
                 System.out.format ("\t\t Item2 \t:\t $%.2f\n",item2);
+
     }
 }

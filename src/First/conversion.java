@@ -9,7 +9,7 @@ public class conversion {
         int a = 100;
         int b = 20;
         a = b;
-        System.out.println("a:" +a+ "b: "+b);
+        System.out.println("a:" +a +"  b: "+b);
 
     }
 }

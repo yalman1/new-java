@@ -2,7 +2,9 @@ package First;
 
 public class conversionByte {
     public static void main(String[] args) {
-        int to1 = 300;
+       int to1 = 3;
+
+
 
 
         System.out.println((byte)to1 );
