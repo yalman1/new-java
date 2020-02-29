@@ -1,4 +1,4 @@
-package First;
+package switchStatement;
 import java.util.Scanner;
 public class days {
     public static void main(String[] args) {
