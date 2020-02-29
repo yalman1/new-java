@@ -1,4 +1,4 @@
-package First;
+package loops;
 
 public class wholeNumber {
     public static void main(String[] args) {

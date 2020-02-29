@@ -1,4 +1,4 @@
-package First;
+package loops;
 
 public class loopOddNumbers {
     public static void main(String[] args) {
