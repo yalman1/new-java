@@ -1,4 +1,4 @@
-package First;
+package ifDecisionStatement;
 import java.util.Scanner;
 public class guessingGame {
     public static void main(String[] args) {

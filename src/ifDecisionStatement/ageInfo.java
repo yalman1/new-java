@@ -1,5 +1,4 @@
-package First;
-import java.net.SocketOption;
+package ifDecisionStatement;
 import java.util.Scanner;
 public class ageInfo {
     public static void main(String[] args) {

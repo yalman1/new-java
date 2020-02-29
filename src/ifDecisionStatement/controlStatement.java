@@ -1,4 +1,4 @@
-package First;
+package ifDecisionStatement;
 
 public class controlStatement {
     public static void main (String []args){

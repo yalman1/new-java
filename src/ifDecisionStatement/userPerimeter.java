@@ -1,4 +1,4 @@
-package First;
+package ifDecisionStatement;
 import java.util.Scanner;
 public class userPerimeter {
     public static void main(String[] args) {

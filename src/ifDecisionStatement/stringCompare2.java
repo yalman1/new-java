@@ -1,6 +1,4 @@
-package First;
-
-import java.security.spec.RSAOtherPrimeInfo;
+package ifDecisionStatement;
 
 public class stringCompare2 {
     public static void main(String[] args) {

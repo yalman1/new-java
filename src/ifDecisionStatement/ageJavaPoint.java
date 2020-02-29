@@ -1,4 +1,4 @@
-package First;
+package ifDecisionStatement;
 public class ageJavaPoint {
     public static void main(String[] args) {
        int age=20;

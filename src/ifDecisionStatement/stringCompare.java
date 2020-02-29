@@ -1,4 +1,4 @@
-package First;
+package ifDecisionStatement;
 
 public class stringCompare {
     public static void main(String[] args) {
