@@ -1,4 +1,4 @@
-package arrayAndExeptions;
+package arrayAndExceptions;
 
 public class ArrayRandomTwoDim {
     public static void main(String[] args) {

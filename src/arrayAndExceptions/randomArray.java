@@ -1,4 +1,4 @@
-package arrayAndExeptions;
+package arrayAndExceptions;
 
 public class randomArray { public static void main(String[] args) {
     int[] arrayNumbers= new int[10];

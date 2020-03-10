@@ -1,4 +1,4 @@
-package arrayAndExeptions;
+package arrayAndExceptions;
 
 import java.util.Arrays;
 

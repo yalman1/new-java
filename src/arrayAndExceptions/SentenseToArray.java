@@ -1,15 +1,17 @@
-package arrayAndExeptions;
+package arrayAndExceptions;
 
 public class SentenseToArray {
     public static void main(String[] args) {
         String sentence = "We are in love with Java";
+        System.out.println(findNumberOfWords(sentence));
+        System.out.println();
         String [] resultArray = convertStringToArray(sentence);
         for(String word:resultArray){
             System.out.println(word);
         }
     }
     public static int findNumberOfWords(String sentence){
-        int counter=0;
+        int counter=1;
         for(int i=0 ; i<sentence.length();i++){
             if (sentence.charAt(i)==' '){
                 counter++;
@@ -23,7 +25,6 @@ public class SentenseToArray {
         String[] result = new String[numWords];
         String word="";
         int index=0;
-
         for(int j=0 ; j<sentence.length() ; j++) {
             word += sentence.charAt(j);
             if (sentence.charAt(j) == ' ') {

@@ -1,4 +1,4 @@
-package arrayAndExeptions;
+package arrayAndExceptions;
 
 public class CutInHalf {
     public static void main(String[] args) {

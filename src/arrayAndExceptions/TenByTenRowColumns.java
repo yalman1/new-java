@@ -1,6 +1,6 @@
-package arrayAndExeptions;
+package arrayAndExceptions;
 
-public class TenByTenRowColumns {
+public class  TenByTenRowColumns {
     public static void main(String[] args) {
         int [][]num=TenByTenArray.generateArray(3);
       printColumnsSum(num);

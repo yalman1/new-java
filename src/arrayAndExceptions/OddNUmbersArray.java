@@ -1,4 +1,4 @@
-package arrayAndExeptions;
+package arrayAndExceptions;
 
 public class OddNUmbersArray {
     public static void main(String[] args) {

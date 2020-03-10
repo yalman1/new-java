@@ -1,4 +1,4 @@
-package arrayAndExeptions;
+package arrayAndExceptions;
 
 public class TwoDimensionalArray {
     public static void main(String[] args) {
