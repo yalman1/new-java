@@ -3,7 +3,7 @@ public class ageJavaPoint {
     public static void main(String[] args) {
        int age=20;
        int javaScore =90;
-       if((age >=20 && age>=30) && javaScore>= 80){
+       if((age >=20 && age<=30) && javaScore>= 80){
            System.out.println(age*1.5 +javaScore<80);
         }
        else if( (age >=20 && age<=30) && javaScore< 80){

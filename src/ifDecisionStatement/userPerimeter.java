@@ -5,7 +5,7 @@ public class userPerimeter {
         //creating scanner object to read from keyboard
         Scanner myScan = new Scanner (System.in);
         System.out.println("please enter C, R, T:");
-        //receiveing answer from the user
+        //receiving answer from the user
         String shape =myScan.next();
 
 
