@@ -1,7 +1,6 @@
 package revision;
 
 import java.util.Arrays;
-
 public class SeparateZeros {
     public static void main(String[] args) {
         int []num={0,5,4,2,1,0};
