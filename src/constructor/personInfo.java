@@ -11,7 +11,6 @@ public class personInfo {
         this.herSalary=herSalary;
         this.herHairColor=herHairColor;
         this.herHeight=herHeight;
-
         }
         public void relation (String relative){
             System.out.println("she is my"+relative);
