@@ -22,7 +22,6 @@ public class Attendance {
     public int[][] getWeekly(){
         return this.weekly;
     }
-
     public void enterAttendanceToday(String today){
         if(today.equalsIgnoreCase("mon")){
             for (int i = 0; i < this.students.length ; i++) {
@@ -96,6 +95,45 @@ public class Attendance {
         result = findMax(attendance);
         System.out.println("***THE MOST ATTENDED DAY***\n" +
                 this.days[result[1]]+" = "+result[0]);
+    }
+    private void printDay(int index){
+        for (int i = 0; i <this.students.length ; i++) {
+            if(this.weekly[index][i]==0)
+                System.out.print("Absent\t\t");
+            else
+                System.out.print("Present\t\t");
+        }
+    }
+    public void printDailyAttendance(String day){
+        System.out.print("\t\t");
+        for (String student:this.students) {
+            System.out.print(student+"\t\t");
+        }
+        System.out.println();
+        if(day.equalsIgnoreCase("mon")){
+            System.out.print("Mon\t\t");
+            this.printDay(0);
+        }
+        else if(day.equalsIgnoreCase("tue")){
+            System.out.print("Tue\t\t");
+            this.printDay(1);
+        }
+        else if(day.equalsIgnoreCase("wed")){
+            System.out.print("Wed\t\t");
+            this.printDay(2);
+        }
+        else if(day.equalsIgnoreCase("Thu")){
+            System.out.print("Thu\t\t");
+            this.printDay(3);
+        }
+        else if (day.equalsIgnoreCase("fri")){
+            System.out.print("Fri\t\t");
+            this.printDay(4);
+        }
+        else {
+            System.out.println("Day is wrong");
+        }
+
     }
     @Override
     public String toString() {
