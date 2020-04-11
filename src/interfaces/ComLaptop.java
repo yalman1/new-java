@@ -1,41 +1,52 @@
 package interfaces;
 
-public class ComLaptop implements Computer{
-    protected String mainBoardSpec;
+public class ComLaptop implements Computers {
+    protected String mainBoardSpecs;
     protected int memorySize;
     protected int cpuSpeed;
     protected String cpuType;
-    protected int batteryPercentage;
+    protected int batteryPercent;
 
-    public ComLaptop(String mainBoardSpec, int memorySize, int cpuSpeed, String cpuType, int batteryPercentage) {
-        this.mainBoardSpec = mainBoardSpec;
+    public ComLaptop(String mainBoardSpecs, int memorySize, int cpuSpeed, String cpuType, int batteryPercent) {
+        this.mainBoardSpecs = mainBoardSpecs;
         this.memorySize = memorySize;
         this.cpuSpeed = cpuSpeed;
         this.cpuType = cpuType;
-        this.batteryPercentage = batteryPercentage;
+        this.batteryPercent = batteryPercent;
     }
-
-    public void setMainBoard (){
-        if (this.mainBoardSpec.contains("intel")){
+    public void setMainBoard(){
+        if(this.mainBoardSpecs.contains("intel")){
             System.out.println("Intel MainBoard is set");
         }
-        else if (this.mainBoardSpec.contains("amd")){
-            System.out.println("AMd mainboard is set");
+        else if(this.mainBoardSpecs.contains("amd")){
+            System.out.println("AMD mainBoard is set");
         }
-        else {
-            System.out.println("unknown mainboard");
+        else{
+            System.out.println("Unknown MainBoard");
         }
     }
-    public void installCPU (){
-        System.out.println("  ");
+    public void installCPU(){
+        System.out.println(this.cpuType+" installed");
     }
-    public void installMemory (){
-        System.out.println("jjj");
+    public void installMemory(int size){
+        System.out.println(size+" GB memory installed");
     }
-    public void chargeBattery (){
+    public void chargeBattery(){
         System.out.println("Battery charging");
-
+        this.batteryPercent++;
     }
-    public void showBatteryPercentage (){
+    public void setWireless(){
+        System.out.println("Wireless connection is set");
+    }
+
+    @Override
+    public String toString() {
+        return "Laptop{" +
+                "mainBoardSpecs='" + mainBoardSpecs + '\'' +
+                ", memorySize=" + memorySize +
+                ", cpuSpeed=" + cpuSpeed +
+                ", cpuType='" + cpuType + '\'' +
+                ", batteryPercent=" + batteryPercent +
+                '}';
     }
 }

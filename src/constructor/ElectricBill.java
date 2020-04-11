@@ -5,7 +5,8 @@ public class ElectricBill {
     int counter;
     String name;
     double billAmount;
-    public ElectricBill(int memberID,int counter,String name,double billAmount){
+
+     ElectricBill(int memberID,int counter,String name,double billAmount){
         this.memberID=memberID;
         this.counter = counter;
         this.name=name;

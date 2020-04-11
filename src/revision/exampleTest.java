@@ -1,6 +1,6 @@
 package revision;
 
-public class exampleTest extends example {
+public class exampleTest {
 
 
 }
