@@ -7,4 +7,5 @@ public class AnimalCat implements Animal {
     public void sleep (){
         System.out.println("Zzzz");
     }
+
 }
