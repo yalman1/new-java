@@ -1,8 +1,9 @@
-package revision;
+package dataStructureAndCollection;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.ListIterator;
 
-public class c {
+public class EndToStart {
     public static void main(String[] args) {
         ArrayList<String> workers=new ArrayList<String>();
         workers.add("Ahmet");
