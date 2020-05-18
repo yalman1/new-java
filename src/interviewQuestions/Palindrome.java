@@ -6,6 +6,7 @@ public class Palindrome {
         isPalindrome(word);
         System.out.println(isPalindrome1(word));
         System.out.println(isPalindrome2(word));
+        System.out.println(isPalindrome3(word));
     }
     public static void isPalindrome (String text){
         String reverse="";
@@ -36,5 +37,34 @@ public class Palindrome {
             tail--;
         }
         return true;
+    }
+    public static boolean isPalindrome3 (String s){
+        for (int i = 0; i < s.length()/2; i++) {
+            if (s.charAt(i) != s.charAt(s.length()-1-i)) return false;
+        }
+        return true;
+    }
+    public static boolean isPalindrome4 (String str){
+        for (int i = 0, j=str.length()-1; i < j; i++, j--) {
+            System.out.println("i = "+i+"\t"+"j = "+j);
+            if (str.charAt(i)!=str.charAt(j)){
+                return false;
+            }
+        }
+        return true;
+    }
+    public static boolean isPalindrome5 (String str, boolean sb){
+        StringBuilder original =new StringBuilder(str);
+        StringBuilder reversed =original.reverse();
+        if (original.equals(reversed)){
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+    public static boolean isNumberPalindrome(int number){
+        String num = "" + number;
+        return isPalindrome4(num);
     }
 }

@@ -4,6 +4,7 @@ public class PrimeNumbers {
     public static void main(String[] args) {
         System.out.println(checkPrime1stWay(11));
         checkPrime2ndWay(12);
+        printPrimeNumbers(100);
     }
 
 
@@ -31,6 +32,20 @@ public class PrimeNumbers {
                 break; }
         System.out.println(n);
         System.out.println(prime);
+    }
+    public static void printPrimeNumbers (int limit){
+        int count;
+        for (int i = 0; i <limit ; i++) {
+            count=0;
+            for (int j = i; j >=1 ; j--) {
+                if (i%j==0){
+                    count++;
+                }
+            }
+            if (count==2){
+                System.out.println(i);
+            }
+        }
     }
 
 }
